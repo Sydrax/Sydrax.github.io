@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main{
+	width: 100%;
+	min-height: 100vh; /*con esto cubrimos toda la pantalla*/
+	background-image: url(../img/fondo.png);
+	/*Saldrán líneas blancas: CORRECCIÓN*/
+	background-size: cover;
+	background-position: center; /*Para posicionarlo*/
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenido{
+	width: 80%;
+	max-width: 1000px;
+	min-height: 500px;
+	background-color: #f9f2e9;
+	border-radius: 20px;
+	display: flex;
+}
+
+.izquierda{
+	width: 60%;
+	border-radius: 20px 0 0 20px;
+}
+
+.izquierda img{
+	margin-left: 55px;
+}
+
+.derecha{
+	width: 40%;
+	background-color: #291e62;
+	min-height: 500px;
+	border-radius: 0 20px 20px 0;
+}
+
+.formulario{
+	margin: auto;
+	margin-top: 38px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	flex-direction: column;
+}
+
+.inputText, .inputNumber, .inputEmail{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 12px;
+	border-radius: 8px;
+	height: 10px;
+	background-color: #f9e7fb;
+	border: none;
+}
+
+
+.inputEnviar{
+	width: 100%;
+	padding: 12px;
+	border-radius: 8px;
+	height: 40px;
+	background-color: #7066f0;
+	border: none;
+	color: white;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 20px;
+}
+
+.inputBigText{
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 12px;
+	border-radius: 8px;
+	height: 110px;
+	background-color: #f9e7fb;
+	border: none;
+}
+
+.Tags{
+	margin-top: 2px;
+	margin-left: 13px;
+	font-family: 'Bebas Neue', sans-serif;
+	color: #cba5e3;
+	font-size: 14px;
+}
+
+
+::-webkit-input-placeholder {
+  color: #a293f4;
+  font-size: 9px;
+}
